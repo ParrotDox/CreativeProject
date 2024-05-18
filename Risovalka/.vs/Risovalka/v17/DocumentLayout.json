@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GIT\\CreativeProject\\Risovalka\\",
+  "WorkspaceRootPath": "C:\\ARM_git\\CreativeProject\\Risovalka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\CppFiles\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|solutionrelative:CppFiles\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|solutionrelative:MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\HeaderFiles\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|solutionrelative:HeaderFiles\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{B68F9B6D-ACAF-4CF9-B9C5-ED27DA365C63}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +22,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyForm.cpp",
-              "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\CppFiles\\MyForm.cpp",
-              "RelativeDocumentMoniker": "CppFiles\\MyForm.cpp",
-              "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\CppFiles\\MyForm.cpp",
-              "RelativeToolTip": "CppFiles\\MyForm.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-17T11:09:41.295Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\HeaderFiles\\MyForm.h",
-              "RelativeDocumentMoniker": "HeaderFiles\\MyForm.h",
-              "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\HeaderFiles\\MyForm.h",
-              "RelativeToolTip": "HeaderFiles\\MyForm.h",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAAABAAAA",
+              "DocumentMoniker": "C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.h",
+              "RelativeDocumentMoniker": "MyForm.h",
+              "ToolTip": "C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.h",
+              "RelativeToolTip": "MyForm.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-17T11:09:34.768Z",
+              "WhenOpened": "2024-05-18T09:32:33.997Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.h",
+              "RelativeDocumentMoniker": "MyForm.h",
+              "ToolTip": "C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-18T09:32:00.6Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyForm.cpp",
+              "DocumentMoniker": "C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.cpp",
+              "RelativeDocumentMoniker": "MyForm.cpp",
+              "ToolTip": "C:\\ARM_git\\CreativeProject\\Risovalka\\MyForm.cpp",
+              "RelativeToolTip": "MyForm.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-18T09:33:40.968Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 57,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
