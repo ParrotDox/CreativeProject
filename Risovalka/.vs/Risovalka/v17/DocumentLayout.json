@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 503,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -43,8 +43,7 @@
               "ViewState": "AQIAAAIAAAAAAAAAAADgvxcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-18T11:42:40.426Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -61,6 +60,10 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "numericUpDownWidth_ValueChanged.cpp",
@@ -70,8 +73,7 @@
               "RelativeToolTip": "Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-19T14:42:17.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T14:42:17.469Z"
             },
             {
               "$type": "Document",
@@ -83,8 +85,7 @@
               "RelativeToolTip": "Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-19T14:41:42.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T14:41:42.425Z"
             },
             {
               "$type": "Document",
@@ -97,10 +98,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-18T11:42:09.939Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

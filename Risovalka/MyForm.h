@@ -190,7 +190,7 @@ namespace Risovalka {
 			});
 			this->TopMenuStrip->Location = System::Drawing::Point(0, 0);
 			this->TopMenuStrip->Name = L"TopMenuStrip";
-			this->TopMenuStrip->Size = System::Drawing::Size(1010, 24);
+			this->TopMenuStrip->Size = System::Drawing::Size(1264, 24);
 			this->TopMenuStrip->TabIndex = 0;
 			// 
 			// canvasToolStripMenuItem
@@ -263,7 +263,7 @@ namespace Risovalka {
 			this->OuterGroupBox->Dock = System::Windows::Forms::DockStyle::Top;
 			this->OuterGroupBox->Location = System::Drawing::Point(0, 24);
 			this->OuterGroupBox->Name = L"OuterGroupBox";
-			this->OuterGroupBox->Size = System::Drawing::Size(1010, 121);
+			this->OuterGroupBox->Size = System::Drawing::Size(1264, 121);
 			this->OuterGroupBox->TabIndex = 1;
 			this->OuterGroupBox->TabStop = false;
 			// 
@@ -273,7 +273,7 @@ namespace Risovalka {
 			this->InnerCentralGroupBox->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->InnerCentralGroupBox->Location = System::Drawing::Point(203, 16);
 			this->InnerCentralGroupBox->Name = L"InnerCentralGroupBox";
-			this->InnerCentralGroupBox->Size = System::Drawing::Size(454, 102);
+			this->InnerCentralGroupBox->Size = System::Drawing::Size(495, 102);
 			this->InnerCentralGroupBox->TabIndex = 2;
 			this->InnerCentralGroupBox->TabStop = false;
 			this->InnerCentralGroupBox->Text = L"Brush / Shapes";
@@ -303,8 +303,8 @@ namespace Risovalka {
 			this->splitContainer1->Panel2->Controls->Add(this->labelLength);
 			this->splitContainer1->Panel2->Controls->Add(this->numericUpDownWidth);
 			this->splitContainer1->Panel2->Controls->Add(this->numericUpDownLength);
-			this->splitContainer1->Size = System::Drawing::Size(448, 83);
-			this->splitContainer1->SplitterDistance = 184;
+			this->splitContainer1->Size = System::Drawing::Size(489, 83);
+			this->splitContainer1->SplitterDistance = 200;
 			this->splitContainer1->TabIndex = 0;
 			// 
 			// labelMode
@@ -471,9 +471,9 @@ namespace Risovalka {
 			// 
 			this->InnerRightGroupBox->Controls->Add(this->splitContainer2);
 			this->InnerRightGroupBox->Dock = System::Windows::Forms::DockStyle::Right;
-			this->InnerRightGroupBox->Location = System::Drawing::Point(657, 16);
+			this->InnerRightGroupBox->Location = System::Drawing::Point(698, 16);
 			this->InnerRightGroupBox->Name = L"InnerRightGroupBox";
-			this->InnerRightGroupBox->Size = System::Drawing::Size(350, 102);
+			this->InnerRightGroupBox->Size = System::Drawing::Size(563, 102);
 			this->InnerRightGroupBox->TabIndex = 1;
 			this->InnerRightGroupBox->TabStop = false;
 			this->InnerRightGroupBox->Text = L"Palette";
@@ -497,24 +497,24 @@ namespace Risovalka {
 			this->splitContainer2->Panel2->Controls->Add(this->ButtonYellow);
 			this->splitContainer2->Panel2->Controls->Add(this->ButtonOrange);
 			this->splitContainer2->Panel2->Controls->Add(this->ButtonRed);
-			this->splitContainer2->Size = System::Drawing::Size(344, 83);
-			this->splitContainer2->SplitterDistance = 83;
+			this->splitContainer2->Size = System::Drawing::Size(557, 83);
+			this->splitContainer2->SplitterDistance = 134;
 			this->splitContainer2->TabIndex = 0;
 			// 
 			// pictureBoxPalette
 			// 
 			this->pictureBoxPalette->Location = System::Drawing::Point(3, 4);
 			this->pictureBoxPalette->Name = L"pictureBoxPalette";
-			this->pictureBoxPalette->Size = System::Drawing::Size(77, 79);
+			this->pictureBoxPalette->Size = System::Drawing::Size(128, 76);
 			this->pictureBoxPalette->TabIndex = 0;
 			this->pictureBoxPalette->TabStop = false;
 			// 
 			// ButtonPurple
 			// 
 			this->ButtonPurple->BackColor = System::Drawing::Color::Purple;
-			this->ButtonPurple->Location = System::Drawing::Point(220, 4);
+			this->ButtonPurple->Location = System::Drawing::Point(353, 12);
 			this->ButtonPurple->Name = L"ButtonPurple";
-			this->ButtonPurple->Size = System::Drawing::Size(30, 30);
+			this->ButtonPurple->Size = System::Drawing::Size(50, 50);
 			this->ButtonPurple->TabIndex = 6;
 			this->ButtonPurple->UseVisualStyleBackColor = false;
 			this->ButtonPurple->Click += gcnew System::EventHandler(this, &PaintForm::ButtonPurple_Click);
@@ -522,9 +522,9 @@ namespace Risovalka {
 			// ButtonBlue
 			// 
 			this->ButtonBlue->BackColor = System::Drawing::Color::Blue;
-			this->ButtonBlue->Location = System::Drawing::Point(184, 4);
+			this->ButtonBlue->Location = System::Drawing::Point(297, 11);
 			this->ButtonBlue->Name = L"ButtonBlue";
-			this->ButtonBlue->Size = System::Drawing::Size(30, 30);
+			this->ButtonBlue->Size = System::Drawing::Size(50, 50);
 			this->ButtonBlue->TabIndex = 5;
 			this->ButtonBlue->UseVisualStyleBackColor = false;
 			this->ButtonBlue->Click += gcnew System::EventHandler(this, &PaintForm::ButtonBlue_Click);
@@ -532,9 +532,9 @@ namespace Risovalka {
 			// ButtonCyan
 			// 
 			this->ButtonCyan->BackColor = System::Drawing::Color::Cyan;
-			this->ButtonCyan->Location = System::Drawing::Point(148, 4);
+			this->ButtonCyan->Location = System::Drawing::Point(241, 10);
 			this->ButtonCyan->Name = L"ButtonCyan";
-			this->ButtonCyan->Size = System::Drawing::Size(30, 30);
+			this->ButtonCyan->Size = System::Drawing::Size(50, 50);
 			this->ButtonCyan->TabIndex = 4;
 			this->ButtonCyan->UseVisualStyleBackColor = false;
 			this->ButtonCyan->Click += gcnew System::EventHandler(this, &PaintForm::ButtonCyan_Click);
@@ -542,9 +542,9 @@ namespace Risovalka {
 			// ButtonGreen
 			// 
 			this->ButtonGreen->BackColor = System::Drawing::Color::Lime;
-			this->ButtonGreen->Location = System::Drawing::Point(112, 4);
+			this->ButtonGreen->Location = System::Drawing::Point(185, 10);
 			this->ButtonGreen->Name = L"ButtonGreen";
-			this->ButtonGreen->Size = System::Drawing::Size(30, 30);
+			this->ButtonGreen->Size = System::Drawing::Size(50, 50);
 			this->ButtonGreen->TabIndex = 3;
 			this->ButtonGreen->UseVisualStyleBackColor = false;
 			this->ButtonGreen->Click += gcnew System::EventHandler(this, &PaintForm::ButtonGreen_Click);
@@ -552,9 +552,9 @@ namespace Risovalka {
 			// ButtonYellow
 			// 
 			this->ButtonYellow->BackColor = System::Drawing::Color::Yellow;
-			this->ButtonYellow->Location = System::Drawing::Point(76, 4);
+			this->ButtonYellow->Location = System::Drawing::Point(129, 10);
 			this->ButtonYellow->Name = L"ButtonYellow";
-			this->ButtonYellow->Size = System::Drawing::Size(30, 30);
+			this->ButtonYellow->Size = System::Drawing::Size(50, 50);
 			this->ButtonYellow->TabIndex = 2;
 			this->ButtonYellow->UseVisualStyleBackColor = false;
 			this->ButtonYellow->Click += gcnew System::EventHandler(this, &PaintForm::ButtonYellow_Click);
@@ -563,9 +563,9 @@ namespace Risovalka {
 			// 
 			this->ButtonOrange->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->ButtonOrange->Location = System::Drawing::Point(40, 4);
+			this->ButtonOrange->Location = System::Drawing::Point(73, 11);
 			this->ButtonOrange->Name = L"ButtonOrange";
-			this->ButtonOrange->Size = System::Drawing::Size(30, 30);
+			this->ButtonOrange->Size = System::Drawing::Size(50, 50);
 			this->ButtonOrange->TabIndex = 1;
 			this->ButtonOrange->UseVisualStyleBackColor = false;
 			this->ButtonOrange->Click += gcnew System::EventHandler(this, &PaintForm::ButtonOrange_Click);
@@ -573,9 +573,9 @@ namespace Risovalka {
 			// ButtonRed
 			// 
 			this->ButtonRed->BackColor = System::Drawing::Color::Red;
-			this->ButtonRed->Location = System::Drawing::Point(4, 4);
+			this->ButtonRed->Location = System::Drawing::Point(17, 11);
 			this->ButtonRed->Name = L"ButtonRed";
-			this->ButtonRed->Size = System::Drawing::Size(30, 30);
+			this->ButtonRed->Size = System::Drawing::Size(50, 50);
 			this->ButtonRed->TabIndex = 0;
 			this->ButtonRed->UseVisualStyleBackColor = false;
 			this->ButtonRed->Click += gcnew System::EventHandler(this, &PaintForm::ButtonRed_Click);
@@ -636,7 +636,7 @@ namespace Risovalka {
 			this->pictureBoxCanvas->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pictureBoxCanvas->Location = System::Drawing::Point(0, 145);
 			this->pictureBoxCanvas->Name = L"pictureBoxCanvas";
-			this->pictureBoxCanvas->Size = System::Drawing::Size(1010, 393);
+			this->pictureBoxCanvas->Size = System::Drawing::Size(1264, 536);
 			this->pictureBoxCanvas->TabIndex = 2;
 			this->pictureBoxCanvas->TabStop = false;
 			this->pictureBoxCanvas->SizeChanged += gcnew System::EventHandler(this, &PaintForm::pictureBoxCanvas_SizeChanged);
@@ -649,7 +649,7 @@ namespace Risovalka {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
-			this->ClientSize = System::Drawing::Size(1010, 538);
+			this->ClientSize = System::Drawing::Size(1264, 681);
 			this->Controls->Add(this->pictureBoxCanvas);
 			this->Controls->Add(this->OuterGroupBox);
 			this->Controls->Add(this->TopMenuStrip);
