@@ -18,6 +18,90 @@
     <ClCompile Include="MyForm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Events\Canvas menu\saveAsToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas menu\openFileToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas menu\clearCanvasToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas menu\canvasToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Sound menu\freeToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Sound menu\steptsToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Sound\comboBoxInstruments_SelectedIndexChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\numericUpDownBrushSize_ValueChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\numericUpDownLength_ValueChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\numericUpDownWidth_ValueChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonCircle_CheckedChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonDraw_CheckedChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonErase_CheckedChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonLine_CheckedChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonSquare_CheckedChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonTriangle_CheckedChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonPurple_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonBlue_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonCyan_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonGreen_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonOrange_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonRed_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Brush options events\Color\ButtonYellow_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseDown.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseMove.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseUp.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_Paint.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_SizeChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">

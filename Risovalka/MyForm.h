@@ -209,7 +209,6 @@ namespace Risovalka {
 			this->createToolStripMenuItem->Name = L"createToolStripMenuItem";
 			this->createToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->createToolStripMenuItem->Text = L"Create canvas";
-			this->createToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::createToolStripMenuItem_Click);
 			// 
 			// saveAsToolStripMenuItem
 			// 
@@ -241,7 +240,6 @@ namespace Risovalka {
 			this->soundModeToolStripMenuItem->Name = L"soundModeToolStripMenuItem";
 			this->soundModeToolStripMenuItem->Size = System::Drawing::Size(87, 20);
 			this->soundModeToolStripMenuItem->Text = L"Sound mode";
-			this->soundModeToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::soundModeToolStripMenuItem_Click);
 			// 
 			// freeToolStripMenuItem
 			// 

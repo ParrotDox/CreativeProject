@@ -120,6 +120,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Events\Brush options events\Color\ButtonPurple_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Color\ButtonBlue_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Color\ButtonCyan_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Color\ButtonGreen_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Color\ButtonOrange_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Color\ButtonRed_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Color\ButtonYellow_Click.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\numericUpDownBrushSize_ValueChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\numericUpDownLength_ValueChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\numericUpDownWidth_ValueChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonCircle_CheckedChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonDraw_CheckedChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonErase_CheckedChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonLine_CheckedChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonSquare_CheckedChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Shape\radioButtonTriangle_CheckedChanged.cpp" />
+    <ClCompile Include="Events\Brush options events\Sound\comboBoxInstruments_SelectedIndexChanged.cpp" />
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseDown.cpp" />
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseMove.cpp" />
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseUp.cpp" />
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_Paint.cpp" />
+    <ClCompile Include="Events\Canvas events\pictureBoxCanvas_SizeChanged.cpp" />
+    <ClCompile Include="Events\Canvas menu\canvasToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Canvas menu\clearCanvasToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Canvas menu\openFileToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Canvas menu\saveAsToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Sound menu\freeToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Sound menu\steptsToolStripMenuItem_Click.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
