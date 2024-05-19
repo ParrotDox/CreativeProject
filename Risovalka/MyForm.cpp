@@ -13,6 +13,6 @@ void main(array<String^>^ args)
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 	//Запуск
-	Risovalka::MyForm form;
+	Risovalka::PaintForm form;
 	Application::Run(% form);
 }
