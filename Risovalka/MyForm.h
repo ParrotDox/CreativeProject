@@ -531,7 +531,7 @@ namespace Risovalka {
 			// 
 			// ButtonCyan
 			// 
-			this->ButtonCyan->BackColor = System::Drawing::Color::Cyan;
+			this->ButtonCyan->BackColor = System::Drawing::ColorTranslator::FromHtml("#00BFFF");
 			this->ButtonCyan->Location = System::Drawing::Point(147, 4);
 			this->ButtonCyan->Name = L"ButtonCyan";
 			this->ButtonCyan->Size = System::Drawing::Size(30, 30);
@@ -541,7 +541,7 @@ namespace Risovalka {
 			// 
 			// ButtonGreen
 			// 
-			this->ButtonGreen->BackColor = System::Drawing::Color::Lime;
+			this->ButtonGreen->BackColor = System::Drawing::ColorTranslator::FromHtml("#008000");;
 			this->ButtonGreen->Location = System::Drawing::Point(111, 4);
 			this->ButtonGreen->Name = L"ButtonGreen";
 			this->ButtonGreen->Size = System::Drawing::Size(30, 30);
@@ -561,8 +561,7 @@ namespace Risovalka {
 			// 
 			// ButtonOrange
 			// 
-			this->ButtonOrange->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->ButtonOrange->BackColor = System::Drawing::ColorTranslator::FromHtml("#FFA500");
 			this->ButtonOrange->Location = System::Drawing::Point(39, 4);
 			this->ButtonOrange->Name = L"ButtonOrange";
 			this->ButtonOrange->Size = System::Drawing::Size(30, 30);

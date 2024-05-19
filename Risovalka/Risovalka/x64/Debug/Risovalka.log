@@ -1,5 +1,3 @@
-﻿  numericUpDownLength_ValueChanged.cpp
-  numericUpDownWidth_ValueChanged.cpp
-  Создание кода...
+﻿  ButtonRed_Click.cpp
   ButtonPurple_Click.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Risovalka.vcxproj -> C:\GIT\CreativeProject\Risovalka\x64\Debug\Risovalka.exe
+  Risovalka.vcxproj -> C:\ARM_git\CreativeProject\Risovalka\x64\Debug\Risovalka.exe
