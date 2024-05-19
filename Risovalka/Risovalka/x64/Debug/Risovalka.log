@@ -1,4 +1,28 @@
 ﻿  MyForm.cpp
-C:\GIT\CreativeProject\Risovalka\MyForm.cpp(11,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Risovalka.vcxproj -> C:\GIT\CreativeProject\Risovalka\x64\Debug\Risovalka.exe
+C:\ARM_git\CreativeProject\Risovalka\MyForm.h(212,89): error C2039: "createToolStripMenuItem_Click": не является членом "Risovalka::PaintForm".
+  (компиляция исходного файла "MyForm.cpp")
+  C:\ARM_git\CreativeProject\Risovalka\MyForm.h(16,19):
+   см. объявление "Risovalka::PaintForm"
+  
+C:\ARM_git\CreativeProject\Risovalka\MyForm.h(212,89): error C2065: createToolStripMenuItem_Click: необъявленный идентификатор
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\ARM_git\CreativeProject\Risovalka\MyForm.h(212,70): error C3924: ошибка в аргументе #2 вызова конструктора делегата "System::EventHandler":
+  (компиляция исходного файла "MyForm.cpp")
+  C:\ARM_git\CreativeProject\Risovalka\MyForm.h(212,70):
+  требуется указатель на функцию-член
+  
+C:\ARM_git\CreativeProject\Risovalka\MyForm.h(244,92): error C2039: "soundModeToolStripMenuItem_Click": не является членом "Risovalka::PaintForm".
+  (компиляция исходного файла "MyForm.cpp")
+  C:\ARM_git\CreativeProject\Risovalka\MyForm.h(16,19):
+   см. объявление "Risovalka::PaintForm"
+  
+C:\ARM_git\CreativeProject\Risovalka\MyForm.h(244,92): error C2065: soundModeToolStripMenuItem_Click: необъявленный идентификатор
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\ARM_git\CreativeProject\Risovalka\MyForm.h(244,73): error C3924: ошибка в аргументе #2 вызова конструктора делегата "System::EventHandler":
+  (компиляция исходного файла "MyForm.cpp")
+  C:\ARM_git\CreativeProject\Risovalka\MyForm.h(244,73):
+  требуется указатель на функцию-член
+  
+C:\ARM_git\CreativeProject\Risovalka\MyForm.cpp(11,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"

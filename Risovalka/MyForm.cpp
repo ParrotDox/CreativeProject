@@ -16,3 +16,9 @@ void main(array<String^>^ args)
 	Risovalka::PaintForm form;
 	Application::Run(% form);
 }
+
+Risovalka::PaintForm::PaintForm(void) {
+	InitializeComponent();
+	openFileDialog1->Filter = "Файлы изображения (*.bmp, *.jpg,*.png)|*.bmp;*.jpg;*.png";
+	saveFileDialog1->Filter = "Файлы изображения (*.bmp, *.jpg,*.png)|*.bmp;*.jpg;*.png";
+}

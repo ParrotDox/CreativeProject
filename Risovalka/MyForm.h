@@ -16,13 +16,7 @@ namespace Risovalka {
 	public ref class PaintForm : public System::Windows::Forms::Form
 	{
 	public:
-		PaintForm(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
-		}
+		PaintForm(void);
 
 	protected:
 		/// <summary>
@@ -135,6 +129,11 @@ namespace Risovalka {
 			this->radioButtonDraw = (gcnew System::Windows::Forms::RadioButton());
 			this->labelBrushSize = (gcnew System::Windows::Forms::Label());
 			this->numericUpDownBrushSize = (gcnew System::Windows::Forms::NumericUpDown());
+			this->labelShape = (gcnew System::Windows::Forms::Label());
+			this->radioButtonTriangle = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButtonLine = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButtonCircle = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButtonSquare = (gcnew System::Windows::Forms::RadioButton());
 			this->labelWidth = (gcnew System::Windows::Forms::Label());
 			this->labelLength = (gcnew System::Windows::Forms::Label());
 			this->numericUpDownWidth = (gcnew System::Windows::Forms::NumericUpDown());
@@ -154,11 +153,6 @@ namespace Risovalka {
 			this->comboBoxInstruments = (gcnew System::Windows::Forms::ComboBox());
 			this->pictureBoxInstrument = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxCanvas = (gcnew System::Windows::Forms::PictureBox());
-			this->radioButtonSquare = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButtonCircle = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButtonLine = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButtonTriangle = (gcnew System::Windows::Forms::RadioButton());
-			this->labelShape = (gcnew System::Windows::Forms::Label());
 			this->TopMenuStrip->SuspendLayout();
 			this->OuterGroupBox->SuspendLayout();
 			this->InnerCentralGroupBox->SuspendLayout();
@@ -208,30 +202,35 @@ namespace Risovalka {
 			this->canvasToolStripMenuItem->Name = L"canvasToolStripMenuItem";
 			this->canvasToolStripMenuItem->Size = System::Drawing::Size(57, 20);
 			this->canvasToolStripMenuItem->Text = L"Canvas";
+			this->canvasToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::canvasToolStripMenuItem_Click);
 			// 
 			// createToolStripMenuItem
 			// 
 			this->createToolStripMenuItem->Name = L"createToolStripMenuItem";
 			this->createToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->createToolStripMenuItem->Text = L"Create canvas";
+			this->createToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::createToolStripMenuItem_Click);
 			// 
 			// saveAsToolStripMenuItem
 			// 
 			this->saveAsToolStripMenuItem->Name = L"saveAsToolStripMenuItem";
 			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->saveAsToolStripMenuItem->Text = L"Save as";
+			this->saveAsToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::saveAsToolStripMenuItem_Click);
 			// 
 			// openFileToolStripMenuItem
 			// 
 			this->openFileToolStripMenuItem->Name = L"openFileToolStripMenuItem";
 			this->openFileToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->openFileToolStripMenuItem->Text = L"Open file";
+			this->openFileToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::openFileToolStripMenuItem_Click);
 			// 
 			// clearCanvasToolStripMenuItem
 			// 
 			this->clearCanvasToolStripMenuItem->Name = L"clearCanvasToolStripMenuItem";
 			this->clearCanvasToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->clearCanvasToolStripMenuItem->Text = L"Clear canvas";
+			this->clearCanvasToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::clearCanvasToolStripMenuItem_Click);
 			// 
 			// soundModeToolStripMenuItem
 			// 
@@ -242,18 +241,21 @@ namespace Risovalka {
 			this->soundModeToolStripMenuItem->Name = L"soundModeToolStripMenuItem";
 			this->soundModeToolStripMenuItem->Size = System::Drawing::Size(87, 20);
 			this->soundModeToolStripMenuItem->Text = L"Sound mode";
+			this->soundModeToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::soundModeToolStripMenuItem_Click);
 			// 
 			// freeToolStripMenuItem
 			// 
 			this->freeToolStripMenuItem->Name = L"freeToolStripMenuItem";
 			this->freeToolStripMenuItem->Size = System::Drawing::Size(102, 22);
 			this->freeToolStripMenuItem->Text = L"Free";
+			this->freeToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::freeToolStripMenuItem_Click);
 			// 
 			// stepsToolStripMenuItem
 			// 
 			this->stepsToolStripMenuItem->Name = L"stepsToolStripMenuItem";
 			this->stepsToolStripMenuItem->Size = System::Drawing::Size(102, 22);
 			this->stepsToolStripMenuItem->Text = L"Steps";
+			this->stepsToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::stepsToolStripMenuItem_Click);
 			// 
 			// OuterGroupBox
 			// 
@@ -328,6 +330,7 @@ namespace Risovalka {
 			this->radioButtonErase->TabStop = true;
 			this->radioButtonErase->Text = L"Erase";
 			this->radioButtonErase->UseVisualStyleBackColor = true;
+			this->radioButtonErase->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonErase_CheckedChanged);
 			// 
 			// radioButtonDraw
 			// 
@@ -339,6 +342,7 @@ namespace Risovalka {
 			this->radioButtonDraw->TabStop = true;
 			this->radioButtonDraw->Text = L"Draw";
 			this->radioButtonDraw->UseVisualStyleBackColor = true;
+			this->radioButtonDraw->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonDraw_CheckedChanged);
 			// 
 			// labelBrushSize
 			// 
@@ -360,6 +364,66 @@ namespace Risovalka {
 			this->numericUpDownBrushSize->Size = System::Drawing::Size(87, 20);
 			this->numericUpDownBrushSize->TabIndex = 0;
 			this->numericUpDownBrushSize->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownBrushSize->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownBrushSize_ValueChanged);
+			// 
+			// labelShape
+			// 
+			this->labelShape->AutoSize = true;
+			this->labelShape->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->labelShape->Location = System::Drawing::Point(3, 5);
+			this->labelShape->Name = L"labelShape";
+			this->labelShape->Size = System::Drawing::Size(48, 15);
+			this->labelShape->TabIndex = 5;
+			this->labelShape->Text = L"Shape";
+			this->labelShape->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// radioButtonTriangle
+			// 
+			this->radioButtonTriangle->AutoSize = true;
+			this->radioButtonTriangle->Location = System::Drawing::Point(68, 53);
+			this->radioButtonTriangle->Name = L"radioButtonTriangle";
+			this->radioButtonTriangle->Size = System::Drawing::Size(63, 17);
+			this->radioButtonTriangle->TabIndex = 10;
+			this->radioButtonTriangle->TabStop = true;
+			this->radioButtonTriangle->Text = L"Triangle";
+			this->radioButtonTriangle->UseVisualStyleBackColor = true;
+			this->radioButtonTriangle->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonTriangle_CheckedChanged);
+			// 
+			// radioButtonLine
+			// 
+			this->radioButtonLine->AutoSize = true;
+			this->radioButtonLine->Location = System::Drawing::Point(68, 29);
+			this->radioButtonLine->Name = L"radioButtonLine";
+			this->radioButtonLine->Size = System::Drawing::Size(45, 17);
+			this->radioButtonLine->TabIndex = 9;
+			this->radioButtonLine->TabStop = true;
+			this->radioButtonLine->Text = L"Line";
+			this->radioButtonLine->UseVisualStyleBackColor = true;
+			this->radioButtonLine->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonLine_CheckedChanged);
+			// 
+			// radioButtonCircle
+			// 
+			this->radioButtonCircle->AutoSize = true;
+			this->radioButtonCircle->Location = System::Drawing::Point(3, 53);
+			this->radioButtonCircle->Name = L"radioButtonCircle";
+			this->radioButtonCircle->Size = System::Drawing::Size(51, 17);
+			this->radioButtonCircle->TabIndex = 8;
+			this->radioButtonCircle->TabStop = true;
+			this->radioButtonCircle->Text = L"Circle";
+			this->radioButtonCircle->UseVisualStyleBackColor = true;
+			this->radioButtonCircle->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonCircle_CheckedChanged);
+			// 
+			// radioButtonSquare
+			// 
+			this->radioButtonSquare->AutoSize = true;
+			this->radioButtonSquare->Location = System::Drawing::Point(3, 29);
+			this->radioButtonSquare->Name = L"radioButtonSquare";
+			this->radioButtonSquare->Size = System::Drawing::Size(59, 17);
+			this->radioButtonSquare->TabIndex = 7;
+			this->radioButtonSquare->TabStop = true;
+			this->radioButtonSquare->Text = L"Square";
+			this->radioButtonSquare->UseVisualStyleBackColor = true;
+			this->radioButtonSquare->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonSquare_CheckedChanged);
 			// 
 			// labelWidth
 			// 
@@ -392,6 +456,7 @@ namespace Risovalka {
 			this->numericUpDownWidth->Size = System::Drawing::Size(57, 20);
 			this->numericUpDownWidth->TabIndex = 4;
 			this->numericUpDownWidth->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownWidth->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownWidth_ValueChanged);
 			// 
 			// numericUpDownLength
 			// 
@@ -402,6 +467,7 @@ namespace Risovalka {
 			this->numericUpDownLength->Size = System::Drawing::Size(57, 20);
 			this->numericUpDownLength->TabIndex = 3;
 			this->numericUpDownLength->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownLength->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownLength_ValueChanged);
 			// 
 			// InnerRightGroupBox
 			// 
@@ -453,6 +519,7 @@ namespace Risovalka {
 			this->ButtonPurple->Size = System::Drawing::Size(30, 30);
 			this->ButtonPurple->TabIndex = 6;
 			this->ButtonPurple->UseVisualStyleBackColor = false;
+			this->ButtonPurple->Click += gcnew System::EventHandler(this, &PaintForm::ButtonPurple_Click);
 			// 
 			// ButtonBlue
 			// 
@@ -462,6 +529,7 @@ namespace Risovalka {
 			this->ButtonBlue->Size = System::Drawing::Size(30, 30);
 			this->ButtonBlue->TabIndex = 5;
 			this->ButtonBlue->UseVisualStyleBackColor = false;
+			this->ButtonBlue->Click += gcnew System::EventHandler(this, &PaintForm::ButtonBlue_Click);
 			// 
 			// ButtonCyan
 			// 
@@ -471,6 +539,7 @@ namespace Risovalka {
 			this->ButtonCyan->Size = System::Drawing::Size(30, 30);
 			this->ButtonCyan->TabIndex = 4;
 			this->ButtonCyan->UseVisualStyleBackColor = false;
+			this->ButtonCyan->Click += gcnew System::EventHandler(this, &PaintForm::ButtonCyan_Click);
 			// 
 			// ButtonGreen
 			// 
@@ -480,6 +549,7 @@ namespace Risovalka {
 			this->ButtonGreen->Size = System::Drawing::Size(30, 30);
 			this->ButtonGreen->TabIndex = 3;
 			this->ButtonGreen->UseVisualStyleBackColor = false;
+			this->ButtonGreen->Click += gcnew System::EventHandler(this, &PaintForm::ButtonGreen_Click);
 			// 
 			// ButtonYellow
 			// 
@@ -489,6 +559,7 @@ namespace Risovalka {
 			this->ButtonYellow->Size = System::Drawing::Size(30, 30);
 			this->ButtonYellow->TabIndex = 2;
 			this->ButtonYellow->UseVisualStyleBackColor = false;
+			this->ButtonYellow->Click += gcnew System::EventHandler(this, &PaintForm::ButtonYellow_Click);
 			// 
 			// ButtonOrange
 			// 
@@ -499,6 +570,7 @@ namespace Risovalka {
 			this->ButtonOrange->Size = System::Drawing::Size(30, 30);
 			this->ButtonOrange->TabIndex = 1;
 			this->ButtonOrange->UseVisualStyleBackColor = false;
+			this->ButtonOrange->Click += gcnew System::EventHandler(this, &PaintForm::ButtonOrange_Click);
 			// 
 			// ButtonRed
 			// 
@@ -508,6 +580,7 @@ namespace Risovalka {
 			this->ButtonRed->Size = System::Drawing::Size(30, 30);
 			this->ButtonRed->TabIndex = 0;
 			this->ButtonRed->UseVisualStyleBackColor = false;
+			this->ButtonRed->Click += gcnew System::EventHandler(this, &PaintForm::ButtonRed_Click);
 			// 
 			// InnerLeftGroupBox
 			// 
@@ -549,6 +622,7 @@ namespace Risovalka {
 			this->comboBoxInstruments->Name = L"comboBoxInstruments";
 			this->comboBoxInstruments->Size = System::Drawing::Size(184, 21);
 			this->comboBoxInstruments->TabIndex = 0;
+			this->comboBoxInstruments->SelectedIndexChanged += gcnew System::EventHandler(this, &PaintForm::comboBoxInstruments_SelectedIndexChanged);
 			// 
 			// pictureBoxInstrument
 			// 
@@ -560,66 +634,18 @@ namespace Risovalka {
 			// 
 			// pictureBoxCanvas
 			// 
-			this->pictureBoxCanvas->Location = System::Drawing::Point(3, 152);
+			this->pictureBoxCanvas->BackColor = System::Drawing::SystemColors::Control;
+			this->pictureBoxCanvas->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pictureBoxCanvas->Location = System::Drawing::Point(0, 145);
 			this->pictureBoxCanvas->Name = L"pictureBoxCanvas";
-			this->pictureBoxCanvas->Size = System::Drawing::Size(1004, 384);
+			this->pictureBoxCanvas->Size = System::Drawing::Size(1010, 393);
 			this->pictureBoxCanvas->TabIndex = 2;
 			this->pictureBoxCanvas->TabStop = false;
-			// 
-			// radioButtonSquare
-			// 
-			this->radioButtonSquare->AutoSize = true;
-			this->radioButtonSquare->Location = System::Drawing::Point(3, 29);
-			this->radioButtonSquare->Name = L"radioButtonSquare";
-			this->radioButtonSquare->Size = System::Drawing::Size(59, 17);
-			this->radioButtonSquare->TabIndex = 7;
-			this->radioButtonSquare->TabStop = true;
-			this->radioButtonSquare->Text = L"Square";
-			this->radioButtonSquare->UseVisualStyleBackColor = true;
-			// 
-			// radioButtonCircle
-			// 
-			this->radioButtonCircle->AutoSize = true;
-			this->radioButtonCircle->Location = System::Drawing::Point(3, 53);
-			this->radioButtonCircle->Name = L"radioButtonCircle";
-			this->radioButtonCircle->Size = System::Drawing::Size(51, 17);
-			this->radioButtonCircle->TabIndex = 8;
-			this->radioButtonCircle->TabStop = true;
-			this->radioButtonCircle->Text = L"Circle";
-			this->radioButtonCircle->UseVisualStyleBackColor = true;
-			// 
-			// radioButtonLine
-			// 
-			this->radioButtonLine->AutoSize = true;
-			this->radioButtonLine->Location = System::Drawing::Point(68, 29);
-			this->radioButtonLine->Name = L"radioButtonLine";
-			this->radioButtonLine->Size = System::Drawing::Size(45, 17);
-			this->radioButtonLine->TabIndex = 9;
-			this->radioButtonLine->TabStop = true;
-			this->radioButtonLine->Text = L"Line";
-			this->radioButtonLine->UseVisualStyleBackColor = true;
-			// 
-			// radioButtonTriangle
-			// 
-			this->radioButtonTriangle->AutoSize = true;
-			this->radioButtonTriangle->Location = System::Drawing::Point(68, 53);
-			this->radioButtonTriangle->Name = L"radioButtonTriangle";
-			this->radioButtonTriangle->Size = System::Drawing::Size(63, 17);
-			this->radioButtonTriangle->TabIndex = 10;
-			this->radioButtonTriangle->TabStop = true;
-			this->radioButtonTriangle->Text = L"Triangle";
-			this->radioButtonTriangle->UseVisualStyleBackColor = true;
-			// 
-			// labelShape
-			// 
-			this->labelShape->AutoSize = true;
-			this->labelShape->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelShape->Location = System::Drawing::Point(3, 5);
-			this->labelShape->Name = L"labelShape";
-			this->labelShape->Size = System::Drawing::Size(48, 15);
-			this->labelShape->TabIndex = 5;
-			this->labelShape->Text = L"Shape";
-			this->labelShape->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->pictureBoxCanvas->SizeChanged += gcnew System::EventHandler(this, &PaintForm::pictureBoxCanvas_SizeChanged);
+			this->pictureBoxCanvas->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &PaintForm::pictureBoxCanvas_Paint);
+			this->pictureBoxCanvas->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &PaintForm::pictureBoxCanvas_MouseDown);
+			this->pictureBoxCanvas->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &PaintForm::pictureBoxCanvas_MouseMove);
+			this->pictureBoxCanvas->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &PaintForm::pictureBoxCanvas_MouseUp);
 			// 
 			// PaintForm
 			// 
@@ -665,8 +691,49 @@ namespace Risovalka {
 
 		}
 #pragma endregion
+
+
+	//Событие при запуске формы
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
+	//События для меню холста
+private: System::Void canvasToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void saveAsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void openFileToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void clearCanvasToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	//События для меню режима звука
+private: System::Void freeToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void stepsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
+	//Событие для выбора размера кисти
+private: System::Void numericUpDownBrushSize_ValueChanged(System::Object^ sender, System::EventArgs^ e);
+	//События выбора цвета кисти
+private: System::Void ButtonRed_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void ButtonOrange_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void ButtonYellow_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void ButtonGreen_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void ButtonCyan_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void ButtonBlue_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void ButtonPurple_Click(System::Object^ sender, System::EventArgs^ e);
+	//События выбора режима кисти
+private: System::Void radioButtonDraw_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void radioButtonErase_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void radioButtonSquare_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void radioButtonCircle_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void radioButtonLine_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void radioButtonTriangle_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
+	//Событие для выбора инструмента
+private: System::Void comboBoxInstruments_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e);
+	//События выбора длины фигуры
+private: System::Void numericUpDownLength_ValueChanged(System::Object^ sender, System::EventArgs^ e);
+	//События выбора ширины фигуры
+private: System::Void numericUpDownWidth_ValueChanged(System::Object^ sender, System::EventArgs^ e);
+
+	//События полотна
+private: System::Void pictureBoxCanvas_SizeChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void pictureBoxCanvas_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
+private: System::Void pictureBoxCanvas_MouseMove(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
+private: System::Void pictureBoxCanvas_MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
+private: System::Void pictureBoxCanvas_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e);
 };
 }
