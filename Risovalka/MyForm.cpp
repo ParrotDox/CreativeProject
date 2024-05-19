@@ -17,6 +17,13 @@ void main(array<String^>^ args)
 	Application::Run(% form);
 }
 
+struct Vector2D
+{
+	int X;
+	int Y;
+};
+Vector2D mousePosition;
+
 Risovalka::PaintForm::PaintForm(void) {
 	InitializeComponent();
 	openFileDialog1->Filter = "Файлы изображения (*.bmp, *.jpg,*.png)|*.bmp;*.jpg;*.png";

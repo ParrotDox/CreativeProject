@@ -512,9 +512,9 @@ namespace Risovalka {
 			// ButtonPurple
 			// 
 			this->ButtonPurple->BackColor = System::Drawing::Color::Purple;
-			this->ButtonPurple->Location = System::Drawing::Point(353, 12);
+			this->ButtonPurple->Location = System::Drawing::Point(219, 4);
 			this->ButtonPurple->Name = L"ButtonPurple";
-			this->ButtonPurple->Size = System::Drawing::Size(50, 50);
+			this->ButtonPurple->Size = System::Drawing::Size(30, 30);
 			this->ButtonPurple->TabIndex = 6;
 			this->ButtonPurple->UseVisualStyleBackColor = false;
 			this->ButtonPurple->Click += gcnew System::EventHandler(this, &PaintForm::ButtonPurple_Click);
@@ -522,9 +522,9 @@ namespace Risovalka {
 			// ButtonBlue
 			// 
 			this->ButtonBlue->BackColor = System::Drawing::Color::Blue;
-			this->ButtonBlue->Location = System::Drawing::Point(297, 11);
+			this->ButtonBlue->Location = System::Drawing::Point(183, 4);
 			this->ButtonBlue->Name = L"ButtonBlue";
-			this->ButtonBlue->Size = System::Drawing::Size(50, 50);
+			this->ButtonBlue->Size = System::Drawing::Size(30, 30);
 			this->ButtonBlue->TabIndex = 5;
 			this->ButtonBlue->UseVisualStyleBackColor = false;
 			this->ButtonBlue->Click += gcnew System::EventHandler(this, &PaintForm::ButtonBlue_Click);
@@ -532,9 +532,9 @@ namespace Risovalka {
 			// ButtonCyan
 			// 
 			this->ButtonCyan->BackColor = System::Drawing::Color::Cyan;
-			this->ButtonCyan->Location = System::Drawing::Point(241, 10);
+			this->ButtonCyan->Location = System::Drawing::Point(147, 4);
 			this->ButtonCyan->Name = L"ButtonCyan";
-			this->ButtonCyan->Size = System::Drawing::Size(50, 50);
+			this->ButtonCyan->Size = System::Drawing::Size(30, 30);
 			this->ButtonCyan->TabIndex = 4;
 			this->ButtonCyan->UseVisualStyleBackColor = false;
 			this->ButtonCyan->Click += gcnew System::EventHandler(this, &PaintForm::ButtonCyan_Click);
@@ -542,9 +542,9 @@ namespace Risovalka {
 			// ButtonGreen
 			// 
 			this->ButtonGreen->BackColor = System::Drawing::Color::Lime;
-			this->ButtonGreen->Location = System::Drawing::Point(185, 10);
+			this->ButtonGreen->Location = System::Drawing::Point(111, 4);
 			this->ButtonGreen->Name = L"ButtonGreen";
-			this->ButtonGreen->Size = System::Drawing::Size(50, 50);
+			this->ButtonGreen->Size = System::Drawing::Size(30, 30);
 			this->ButtonGreen->TabIndex = 3;
 			this->ButtonGreen->UseVisualStyleBackColor = false;
 			this->ButtonGreen->Click += gcnew System::EventHandler(this, &PaintForm::ButtonGreen_Click);
@@ -552,9 +552,9 @@ namespace Risovalka {
 			// ButtonYellow
 			// 
 			this->ButtonYellow->BackColor = System::Drawing::Color::Yellow;
-			this->ButtonYellow->Location = System::Drawing::Point(129, 10);
+			this->ButtonYellow->Location = System::Drawing::Point(75, 4);
 			this->ButtonYellow->Name = L"ButtonYellow";
-			this->ButtonYellow->Size = System::Drawing::Size(50, 50);
+			this->ButtonYellow->Size = System::Drawing::Size(30, 30);
 			this->ButtonYellow->TabIndex = 2;
 			this->ButtonYellow->UseVisualStyleBackColor = false;
 			this->ButtonYellow->Click += gcnew System::EventHandler(this, &PaintForm::ButtonYellow_Click);
@@ -563,9 +563,9 @@ namespace Risovalka {
 			// 
 			this->ButtonOrange->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->ButtonOrange->Location = System::Drawing::Point(73, 11);
+			this->ButtonOrange->Location = System::Drawing::Point(39, 4);
 			this->ButtonOrange->Name = L"ButtonOrange";
-			this->ButtonOrange->Size = System::Drawing::Size(50, 50);
+			this->ButtonOrange->Size = System::Drawing::Size(30, 30);
 			this->ButtonOrange->TabIndex = 1;
 			this->ButtonOrange->UseVisualStyleBackColor = false;
 			this->ButtonOrange->Click += gcnew System::EventHandler(this, &PaintForm::ButtonOrange_Click);
@@ -573,9 +573,9 @@ namespace Risovalka {
 			// ButtonRed
 			// 
 			this->ButtonRed->BackColor = System::Drawing::Color::Red;
-			this->ButtonRed->Location = System::Drawing::Point(17, 11);
+			this->ButtonRed->Location = System::Drawing::Point(3, 4);
 			this->ButtonRed->Name = L"ButtonRed";
-			this->ButtonRed->Size = System::Drawing::Size(50, 50);
+			this->ButtonRed->Size = System::Drawing::Size(30, 30);
 			this->ButtonRed->TabIndex = 0;
 			this->ButtonRed->UseVisualStyleBackColor = false;
 			this->ButtonRed->Click += gcnew System::EventHandler(this, &PaintForm::ButtonRed_Click);
@@ -689,6 +689,42 @@ namespace Risovalka {
 
 		}
 #pragma endregion
+
+
+	private:
+		//Переменные кисти
+		int size = 1;
+		//Цвет
+		Color^ color;
+		/*
+		0 - просто кисть
+		1 - резинка
+		2 - квадрат
+		3 - круг
+		4 - линия
+		5 - треугольник
+		*/
+		int shape = 0;
+		int width = 1;
+		int length = 1;
+		/*
+		0 - Свободный (free)
+		1 - Ступеначатый (step)
+		*/
+		int mode = 0;
+
+		/*
+		"Marimba"
+		"Piano"
+		"String"
+		"WoodWind"
+		!!!Для звуков природы нельзя выставить ступенчатный режим ->
+		!!!Следует задать mode = 0;
+		"Nature"
+		*/
+		String^ instrument;
+
+		//Переменные мышки пользователя (структура координат находится в MyForm.cpp)
 
 
 	//Событие при запуске формы

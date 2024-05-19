@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\Events\\Sound menu\\steptsToolStripMenuItem_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Sound menu\\steptsToolStripMenuItem_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\Events\\Sound menu\\freeToolStripMenuItem_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Sound menu\\freeToolStripMenuItem_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProject\\Risovalka\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -40,52 +40,55 @@
               "RelativeDocumentMoniker": "MyForm.cpp",
               "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\MyForm.cpp",
               "RelativeToolTip": "MyForm.cpp",
-              "ViewState": "AQIAAAIAAAAAAAAAAADgvxcAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-18T11:42:40.426Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MyForm.h",
               "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\MyForm.h",
               "RelativeDocumentMoniker": "MyForm.h",
               "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\MyForm.h",
               "RelativeToolTip": "MyForm.h",
-              "ViewState": "AQIAAHQCAAAAAAAAAAAawNYCAAAfAAAA",
+              "ViewState": "AQIAALICAAAAAAAAAAAAALkCAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-18T11:59:10.193Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "steptsToolStripMenuItem_Click.cpp",
+              "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Sound menu\\steptsToolStripMenuItem_Click.cpp",
+              "RelativeDocumentMoniker": "Events\\Sound menu\\steptsToolStripMenuItem_Click.cpp",
+              "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Sound menu\\steptsToolStripMenuItem_Click.cpp",
+              "RelativeToolTip": "Events\\Sound menu\\steptsToolStripMenuItem_Click.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-19T16:13:06.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "numericUpDownWidth_ValueChanged.cpp",
-              "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp",
-              "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp",
-              "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp",
-              "RelativeToolTip": "Events\\Brush options events\\Shape\\numericUpDownWidth_ValueChanged.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Title": "freeToolStripMenuItem_Click.cpp",
+              "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "RelativeDocumentMoniker": "Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "RelativeToolTip": "Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-19T14:42:17.469Z"
+              "WhenOpened": "2024-05-19T16:12:49.282Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "numericUpDownLength_ValueChanged.cpp",
-              "DocumentMoniker": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp",
-              "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp",
-              "ToolTip": "C:\\GIT\\CreativeProject\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp",
-              "RelativeToolTip": "Events\\Brush options events\\Shape\\numericUpDownLength_ValueChanged.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-19T14:41:42.425Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
